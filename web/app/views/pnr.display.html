@@ -1,0 +1,27 @@
+     
+   
+<div flex  >
+  <md-content layout="row" layout-align="center center" style="margin: 10% 20% 10%      20%; border:1px solid #C8CFD6;">
+    <table style="valign:top; width:85%;height:80%;" border="0">
+      <tr style="width: 100%;height:100%">
+        <td style="width: 70%;height:100%">
+          <div ng-controller="astPNRCtrl" >
+            <p>
+              <table border="1"> 
+                <tr><td>PAX</td><td>Tier</td><td>Flight</td><td>Origin</td><td>Destination</td></tr>
+                <tr ng-repeat="pnr in pnrdataresponse">
+                  <td>{{pnr.paxName}}</td>
+                  <td>{{pnr.tier}}</td>
+                  <td>{{pnr.flightNo}}</td>
+                  <td>{{pnr.origin}}</td>
+                  <td>{{pnr.destination}}</td>
+                </tr>
+              </table>
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    </md-content>
+</div>
+ 
