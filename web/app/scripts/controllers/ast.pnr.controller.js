@@ -2,7 +2,7 @@
 
 var app = angular.module('astMobApp');
 
-app.controller("astPNRCtrl", ['$scope', 'pnrService', function($scope, pnrService) {
+app.controller("astPNRCtrl", ['$scope', function($scope) {
     console.log('Hi....');
-    $scope.pnrdataresponse = pnrService.getPnrdata('ABCD');
+    // $scope.pnrdataresponse = pnrService.getPnrdata('ABCD');
 }]);
