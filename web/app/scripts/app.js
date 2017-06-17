@@ -24,12 +24,12 @@ angular
             .when('/', {
                 templateUrl: 'views/ast.dashboard.html',
                 controller: 'astPNRCtrl',
-                controllerAs: 'astPNRCtrl'
+                controllerAs: 'astCtrl'
             })
             .when('/pnrdata', {
                 templateUrl: 'views/pnr.display.html',
                 controller: 'astPNRCtrl',
-                controllerAs: 'astPNRCtrl'
+                controllerAs: 'astCtrl'
             })
             .otherwise({
                 redirectTo: '/'
